@@ -1,0 +1,253 @@
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item h2{
+	font-size: 80px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0;
+}
+.home .carousel-item p{
+	font-size: 30px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next, 
+.home .carousel-control-prev{
+	height: 60px;
+	width: 60px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover, 
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img, 
+.home .carousel-control-prev img{
+   width: 30px;
+}
+.home .carousel-control-next{
+	right: -90px;
+}
+.home .carousel-control-prev{
+	left: -90px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .home .carousel-control-next, 
+  .home .carousel-control-prev{
+  	display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .home .carousel-item h2{
+  	font-size: 45px;
+  }
+  .home .carousel-item p{
+  	font-size: 22px;
+  }
+}
+.item-slider {
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Para posicionar el overlay */
+}
+
+/* Capa semitransparente detrás del contenido */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Capa semitransparente negra */
+    z-index: 1; /* Asegura que la capa esté detrás del contenido */
+}
+
+/* Asegúrate de que el contenido esté por encima de la capa de overlay */
+.banner-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre la capa de overlay */
+    color: #fff; /* Color del texto blanco para contraste */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 24px; /* Ajusta el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    .banner-content p {
+        font-size: 16px; /* Ajusta el tamaño del párrafo en pantallas pequeñas */
+    }
+}
+/* Estilo del carrusel para que cada imagen cubra toda la pantalla */
+.default-banner .item-slider {
+    height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el área sin distorsionarse */
+    background-repeat: no-repeat; /* No permite que la imagen se repita */
+    position: relative;
+}
+
+/* Superposición para oscurecer las imágenes */
+.default-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Asegurando que el contenido del banner esté visible sobre la superposición */
+.banner-content {
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+/* Responsivo: Ajusta el texto en pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    .banner-content h4 {
+        font-size: 18px;
+    }
+    .banner-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-content h1 {
+        font-size: 24px;
+    }
+    .banner-content h4 {
+        font-size: 16px;
+    }
+    .banner-content p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}

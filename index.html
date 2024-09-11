@@ -1,0 +1,486 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<style>
+			.logo1{
+				opacity: 0.9;
+			}
+			.whatsapp-button {
+				display: inline-flex;
+				align-items: center;
+				background-color: #25D366; /* Color verde de WhatsApp */
+				color: white;
+				padding: 10px 15px;
+				border-radius: 5px;
+				text-decoration: none;
+				font-size: 16px;
+				font-family: Arial, sans-serif;
+			}
+	
+			.whatsapp-button i {
+				margin-right: 8px;
+			}
+	
+			.whatsapp-button:hover {
+				background-color: #128C7E; /* Color verde oscuro al pasar el ratón */
+			}
+
+
+
+			.facebook-button {
+				display: inline-flex;
+				align-items: center;
+				background-color: #0b2288; /* Color verde de WhatsApp */
+				color: white;
+				padding: 10px 15px;
+				border-radius: 5px;
+				text-decoration: none;
+				font-size: 16px;
+				font-family: Arial, sans-serif;
+			}
+	
+			.facebook-button i {
+				margin-right: 8px;
+			}
+	
+			.facebook-button:hover {
+				background-color: #3c1bf3; /* Color verde oscuro al pasar el ratón */
+			}
+			.construction-icon {
+            font-size: 40px; /* Tamaño del ícono */
+            color: #1b1b1a; /* Color del ícono (naranja) */
+
+        }
+
+		.contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            color: #666;
+        }
+
+		/* CSS para ajustar el tamaño del mapa */
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+		</style>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>PasorapaS.I.</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		
+		<link rel="stylesheet" type="text/css" href="css/styleslider.css">
+		
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+		</head>
+		<body>
+            <a href="https://api.whatsapp.com/send?phone=+56963046578" class="btn-wsp" target="_blank">
+				<i class="fa fa-whatsapp icono"></i>
+			</a>
+
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+				<!-- Start Header Area -->
+				<header class="default-header">
+					<nav class="navbar navbar-expand-lg  navbar-light">
+						<div class="container">
+							  <a class="navbar-brand" href="index.html">
+							  	<img src="img/logopaso1.png" class="logo1" width="250" height="100" style="border: 3px solid black; border-radius: 20px;">
+							  </a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							    <span class="text-white lnr lnr-menu"></span>
+							  </button>
+
+							  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+							    <ul class="navbar-nav">
+									<li><a href="#home">Inicio</a></li>
+									<li><a href="#about">Nosotros</a></li>									
+									<li><a href="#secvice">Servicios</a></li>
+									<li><a href="#contact">Ubicacion</a></li>
+									<!-- Dropdown -->
+								    
+							    </ul>
+							  </div>						
+						</div>
+					</nav>
+				</header>
+				<!-- End Header Area -->				
+			</section>
+
+			<section class="default-banner active-blog-slider">
+				<!-- Primera diapositiva del carrusel -->
+				<div class="item-slider relative" style="background: url('img/banerfinal.png'); background-size: cover; background-position: center; height: 100vh;">
+					<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+					<div class="container h-100">
+						<div class="row fullscreen justify-content-center align-items-center h-100">
+							<div class="col-md-10 col-12 text-center">
+								<div class="banner-content">
+									<h4 class="text-white mb-20 text-uppercase">¡Soluciones completas para tu proyecto!</h4>
+									<h1 class="text-uppercase text-white">Venta de equipos de proteccion</h1>
+									<p class="text-white" style="font-weight: bold;">"¡No comprometas tu seguridad! Adquiere hoy nuestros equipos de protección para construcción: camisas, guantes, cascos y más. ¡Tu seguridad es nuestra prioridad!".</p>
+									<a href="https://wa.me/+56963046578" class="whatsapp-button" target="_blank">
+										<i class="fab fa-whatsapp"></i> Envíanos un mensaje
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Segunda diapositiva del carrusel -->
+				<div class="item-slider relative" style="background: url('img/materiales2.jpg'); background-size: cover; background-position: center; height: 100vh;">
+					<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+					<div class="container h-100">
+						<div class="row fullscreen justify-content-center align-items-center h-100">
+							<div class="col-md-10 col-12 text-center">
+								<div class="banner-content">
+									<h4 class="text-white mb-20 text-uppercase">¡Soluciones completas para tu proyecto!</h4>
+									<h1 class="text-uppercase text-white">Venta de materiales</h1>
+									<p class="text-white" style="font-weight: bold;">"Compra materiales de construcción de calidad: cemento, arena, ladrillos y más. ¡Encuentra todo lo que necesitas para tu obra aquí!".</p>
+									<a href="https://wa.me/+56963046578" class="whatsapp-button" target="_blank">
+										<i class="fab fa-whatsapp"></i> Envíanos un mensaje
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+
+			<!-- Start about Area -->
+			<section class="section-gap info-area" id="about">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-40 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Pasorapa Servicios Integrales SpA.</h1>
+								
+							</div>
+						</div>
+					</div>					
+					<div class="single-info row mt-40">
+						<div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+							<div class="info-thumb">
+								<img src="img/logopaso1.png" width="550" height="700" class="img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 no-padding info-rigth">
+							<div class="info-content">
+								<h2 class="pb-30"> <br>
+								 <br>
+								</h2>
+								<p>
+																		
+								</p>
+								<br>
+								<h2>
+									Somos una empresa especializada en la venta de materiales de construcción y elementos de seguridad personal para proyectos de obra. Nos dedicamos a proporcionar productos de alta calidad para que nuestros clientes puedan llevar a cabo sus proyectos de manera segura, eficiente y con los mejores recursos.									
+								</h2>
+								<br>
+								<p>
+									
+								</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End about Area -->
+			
+			
+			<!-- Start project Area -->
+			
+			<!-- End project Area -->
+
+
+			<!-- Start feature Area -->
+			<section class="feature-area section-gap" id="secvice">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Servicios que ofrecemos</h1>
+								
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						
+						
+						
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-rocket"></span>
+									<h4><a href="#">Venta al por mayor de productos textiles, prendas de vestir y calzado</a></h4>
+								</div>
+								<p>
+									"Ofrecemos venta al por mayor de textiles, prendas de vestir y calzado. Variedad en estilos, calidad garantizada y precios competitivos para que tu negocio siempre esté a la vanguardia. ¡Aprovecha nuestras ofertas y amplía tu inventario con productos de confianza!".
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-diamond"></span>
+									<h4><a href="#">Venta al por menor de articulos de ferreteria y materiales de construccion</a></h4>
+								</div>
+								<p>
+									"Venta al por menor de artículos de ferretería y materiales de construcción. Encuentra todo lo que necesitas para tus proyectos: calidad, asesoría y los mejores precios, ¡todo en un solo lugar!".
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-bubble"></span>
+									<h4><a href="#">Venta al por menor de prendas y accesorios de vestir en comercios especializados</a></h4>
+								</div>
+								<p>
+									"Venta al por menor de prendas y accesorios de vestir. Estilos únicos y de calidad en comercios especializados para que siempre encuentres lo mejor para tu guardarropa. ¡Visítanos y descubre lo último en moda!".
+								</p>							
+							</div>							
+						</div>																					
+					</div>
+				</div>	
+			</section>
+			<!-- End feature Area -->
+
+
+			<!-- Start gallery Area -->
+			<section class="gallery-area" id="gallery">
+    <div class="container-fluid">
+        <div class="row no-padding">
+            <div class="owl-carousel active-gallery">
+                <div class="item single-gallery">
+                    <img src="img/camisa.jpeg" alt="Camisas de seguridad" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+                <div class="item single-gallery">
+                    <img src="img/botas.jpeg" alt="Botas de seguridad" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+                <div class="item single-gallery">
+                    <img src="img/gafas.jpeg" alt="Gafas de protección" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+                <div class="item single-gallery">
+                    <img src="img/guante.jpeg" alt="Guantes de trabajo" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+                <div class="item single-gallery">
+                    <img src="img/cemento.jpg" alt="Cemento" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+                <div class="item single-gallery">
+                    <img src="img/folleto.jpg" alt="Arena para construcción" width="500" height="400" style="border: 15px solid #000; border-radius: 10px; padding: 5px;">
+                </div>
+				
+				
+            </div>
+        </div>
+    </div>
+</section>
+
+			<!-- End gallery Area -->
+			
+			
+			<!-- Start faq Area -->
+			
+			<!-- End faq Area -->
+			
+			
+			<!-- Start Video Area -->
+			
+			<!-- Start Video Area -->
+			
+			
+			<!-- Start logo Area -->
+			<section class="logo-area">
+				<div class="container">
+					<div class="row">
+						
+					</div>
+				</div>	
+			</section>
+			<!-- End logo Area -->
+			
+
+							
+			<!-- start contact Area -->		
+			<section class="contact-area section-gap" id="contact">
+				<h1 style="text-align: center;  font-family: 'bold', sans-serif; font-size: 36px; color: #1e2b3f; font-weight: bold; text-transform: uppercase;">
+					NUESTRA UBICACION
+				</h1>
+    <!-- Contenedor del mapa -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3654.9573610256216!2d-70.39067!3d-23.641697999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDM4JzMwLjEiUyA3MMKwMjMnMjYuNCJX!5e0!3m2!1ses-419!2sbo!4v1726061188065!5m2!1ses-419!2sbo"
+			
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+			</section>
+			<!-- end contact Area -->		
+			
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<img src="img/logopaso1.png"  width="220" height="90" style="border: 3px solid black; border-radius: 20px;">
+								<h6>
+									 Alquiler y venta de equipos de construccion.
+								</h6>
+							    <h6>
+									DIRECCION: ELEUTERIO RAMIREZ # 447- ANTOFAGASTA
+								</h6>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            		<p class="footer-text"> &copy;<script>document.write(new Date().getFullYear());</script> CAS11 | Derechos reservados <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">CAS11</a></p>
+            		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							
+						</div>						
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>REDES SOCIALES</h6>
+								<p>Siguenos</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://www.facebook.com/profile.php?id=100076927871618" class="facebook-button"><i class="fa fa-facebook"></i></a>
+									
+									<a href="https://wa.me/+56963046578" class="whatsapp-button" target="_blank">
+										<i class="fab fa-whatsapp"></i> 
+									</a>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->			
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/slick.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>		
+			<script src="js/main.js"></script>	
+			
+		</body>
+	</html>
